@@ -9,7 +9,6 @@ a) Hệ thống hiện tại có những vấn đề gì?
 - Khi tài xế đầu tiên không nhận chuyến thì việc tìm tài xế khác chưa được tự động hóa tốt.
 - Khó theo dõi vị trí của tài xế để tìm tài xế gần khách hàng và dự đoán thời gian tài xế đến.
 - Hệ thống hiện tại khó mở rộng thêm các chức năng mới trong tương lai.
-
 b) Mục tiêu chính của hệ thống:
 - Cho phép khách hàng đặt xe một cách dễ dàng.
 - Tự động tìm và phân công tài xế phù hợp cho khách hàng.
@@ -21,14 +20,12 @@ b) Mục tiêu chính của hệ thống:
 - Hỗ trợ nhân viên vận hành theo dõi và xử lý các chuyến đi.
 - Có báo cáo về số lượng chuyến, doanh thu, tỷ lệ hoàn thành, tỷ lệ hủy và hiệu quả của tài xế.
 - Hệ thống phải có khả năng mở rộng để sau này có thể thêm dịch vụ, phương thức thanh toán hoặc nhà cung cấp thông báo mới.
-
 c) Vấn đề hiện tại là gì?
 - Việc tìm và phân công tài xế mất nhiều thời gian.
 - Khách hàng không biết chính xác chuyến xe đang ở trạng thái nào.
 - Nhân viên vận hành khó quản lý khi số lượng chuyến tăng.
 - Việc thanh toán và thông tin giao dịch chưa được quản lý tốt.
 - Hệ thống khó mở rộng khi công ty muốn phát triển thêm.
-
 d) Ai là người tham gia và sử dụng hệ thống?
 d.1. Khách hàng
 - Đăng ký và đăng nhập.
@@ -85,5 +82,13 @@ d.6. Nhà cung cấp dịch vụ thông báo
 - Thông báo khi tài xế đến điểm đón.
 - Thông báo khi chuyến đi hoàn thành.
 - Thông báo kết quả thanh toán.
-- Gửi thông báo cho tài xế khi có chuyến mới hoặc có thay đổi liên quan đến chuyến đang thực hiện.
-- Hệ thống cần thiết kế để sau này có thể thêm các kênh thông báo hoặc nhà cung cấp thông báo khác mà không phải thay đổi toàn bộ hệ thống.
+Câu 2: 
+| Tên                                                        | Vai trò                                                                                                                                         |
+| ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Khách hàng (Customer)                                 | Đăng ký, đặt xe, theo dõi chuyến đi, thanh toán, xem lịch sử và đánh giá tài xế.                                                                |
+| **Tài xế (Driver)**                                        | Nhận hoặc từ chối chuyến, cập nhật trạng thái chuyến, quản lý thông tin cá nhân và phương tiện, cung cấp vị trí để hệ thống tìm tài xế phù hợp. |
+| **Nhân viên vận hành (Operation Staff)**                   | Quản lý khách hàng, tài xế, phương tiện và chuyến đi; theo dõi chuyến đang diễn ra, xử lý các trường hợp lỗi và tra cứu giao dịch.              |
+| **Ban giám đốc (Management)**                              | Theo dõi số lượng chuyến, doanh thu, tỷ lệ hoàn thành/hủy và hiệu quả tài xế; đưa ra định hướng phát triển hệ thống.                            |
+| **Nhà cung cấp thanh toán (Payment Provider)**             | Xử lý thanh toán điện tử và trả kết quả giao dịch về hệ thống CAB.                                                                              |
+| **Nhà cung cấp dịch vụ thông báo (Notification Provider)** | Gửi các thông báo liên quan đến đặt xe, tài xế, chuyến đi và thanh toán cho khách hàng và tài xế.                                               |
+
