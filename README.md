@@ -85,10 +85,11 @@ d.6. Nhà cung cấp dịch vụ thông báo
 Câu 2: 
 | Tên                                                        | Vai trò                                                                                                                                         |
 | ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| Khách hàng (Customer)                                 | Đăng ký, đặt xe, theo dõi chuyến đi, thanh toán, xem lịch sử và đánh giá tài xế.                                                                |
+| **Khách hàng (Customer)**                                  | Đăng ký, đặt xe, theo dõi chuyến đi, thanh toán, xem lịch sử và đánh giá tài xế.                                                                |
 | **Tài xế (Driver)**                                        | Nhận hoặc từ chối chuyến, cập nhật trạng thái chuyến, quản lý thông tin cá nhân và phương tiện, cung cấp vị trí để hệ thống tìm tài xế phù hợp. |
 | **Nhân viên vận hành (Operation Staff)**                   | Quản lý khách hàng, tài xế, phương tiện và chuyến đi; theo dõi chuyến đang diễn ra, xử lý các trường hợp lỗi và tra cứu giao dịch.              |
 | **Ban giám đốc (Management)**                              | Theo dõi số lượng chuyến, doanh thu, tỷ lệ hoàn thành/hủy và hiệu quả tài xế; đưa ra định hướng phát triển hệ thống.                            |
 | **Nhà cung cấp thanh toán (Payment Provider)**             | Xử lý thanh toán điện tử và trả kết quả giao dịch về hệ thống CAB.                                                                              |
 | **Nhà cung cấp dịch vụ thông báo (Notification Provider)** | Gửi các thông báo liên quan đến đặt xe, tài xế, chuyến đi và thanh toán cho khách hàng và tài xế.                                               |
+
 
