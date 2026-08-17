@@ -182,9 +182,7 @@ Thanh toán
 Đánh giá tài xế
 ```
 ## Câu 5: Chuyển các yêu cầu thành yêu cầu nghiệp vụ (Business Requirement)
-
 ### 5.1. Danh sách Business Requirement
-
 | Mã | Nhóm nghiệp vụ | Yêu cầu nghiệp vụ |
 |---|---|---|
 | **BR01** | Quản lý người dùng | Hệ thống cho phép người dùng đăng ký, đăng nhập, đăng xuất và quản lý thông tin tài khoản. |
@@ -210,7 +208,6 @@ Thanh toán
 | **BR21** | Khả năng mở rộng | Hệ thống có khả năng mở rộng thêm loại dịch vụ, phương thức thanh toán và nhà cung cấp trong tương lai. |
 
 ### 5.2. Business Requirement theo từng bên liên quan
-
 | Bên liên quan | Business Requirement chính |
 |---|---|
 | **Khách hàng** | Đăng ký tài khoản, đặt xe, theo dõi chuyến đi, xem thông tin tài xế, thanh toán và đánh giá tài xế. |
@@ -220,3 +217,184 @@ Thanh toán
 | **Nhà cung cấp thanh toán** | Xử lý các giao dịch thanh toán điện tử và trả kết quả giao dịch về hệ thống CAB. |
 | **Nhà cung cấp dịch vụ thông báo** | Gửi thông báo liên quan đến đặt xe, tài xế, chuyến đi và thanh toán. |
 
+## Câu 6: Phân rã các yêu cầu chức năng
+### FR01 - Quản lý người dùng
+- Đăng ký tài khoản.
+- Đăng nhập.
+- Đăng xuất.
+- Xác thực tài khoản.
+- Cập nhật thông tin cá nhân.
+- Quản lý thông tin tài khoản.
+- Xác định vai trò người dùng.
+- Kiểm tra quyền truy cập.
+### FR02 - Quản lý khách hàng
+- Tạo thông tin khách hàng.
+- Cập nhật thông tin khách hàng.
+- Xem thông tin khách hàng.
+- Tìm kiếm khách hàng.
+- Xem lịch sử chuyến đi.
+- Xem lịch sử thanh toán.
+### FR03 - Quản lý tài xế
+- Tạo thông tin tài xế.
+- Cập nhật thông tin tài xế.
+- Xem thông tin tài xế.
+- Cập nhật trạng thái hoạt động.
+- Cập nhật trạng thái sẵn sàng nhận chuyến.
+- Cập nhật vị trí tài xế.
+- Xem lịch sử chuyến đi của tài xế.
+### FR04 - Quản lý phương tiện
+- Thêm phương tiện.
+- Cập nhật thông tin phương tiện.
+- Xem thông tin phương tiện.
+- Xác định loại xe.
+- Gán phương tiện cho tài xế.
+- Thay đổi phương tiện của tài xế.
+- Kiểm tra trạng thái phương tiện.
+### FR05 - Đặt xe
+- Nhập điểm đón.
+- Nhập điểm đến.
+- Chọn loại xe.
+- Tạo yêu cầu đặt xe.
+- Kiểm tra thông tin yêu cầu.
+- Xác nhận đặt xe.
+- Hủy yêu cầu đặt xe.
+- Hiển thị trạng thái yêu cầu đặt xe.
+### FR06 - Tìm tài xế
+- Xác định vị trí điểm đón.
+- Xác định các tài xế đang sẵn sàng.
+- Kiểm tra tài xế có loại xe phù hợp.
+- Lấy vị trí hiện tại của tài xế.
+- Tính khoảng cách giữa tài xế và khách hàng.
+- Xác định tài xế phù hợp.
+- Ưu tiên tài xế gần khách hàng.
+- Gửi yêu cầu nhận chuyến đến tài xế.
+- Chờ tài xế phản hồi.
+- Ghi nhận kết quả phản hồi.
+- Tiếp tục tìm tài xế khác nếu tài xế từ chối.
+- Tiếp tục tìm tài xế khác nếu tài xế không phản hồi.
+- Thông báo cho khách hàng khi không tìm được tài xế.
+### FR07 - Phân công tài xế
+- Gửi yêu cầu chuyến cho tài xế.
+- Ghi nhận tài xế nhận chuyến.
+- Ghi nhận tài xế từ chối chuyến.
+- Kiểm tra thời gian phản hồi của tài xế.
+- Xử lý trường hợp tài xế không phản hồi.
+- Chuyển yêu cầu sang tài xế tiếp theo.
+- Xác nhận tài xế được phân công.
+- Thông báo tài xế cho khách hàng.
+- Thông báo kết quả phân công.
+### FR08 - Quản lý chuyến đi
+- Tạo chuyến đi.
+- Gán khách hàng vào chuyến đi.
+- Gán tài xế vào chuyến đi.
+- Cập nhật trạng thái chuyến.
+- Theo dõi trạng thái chuyến.
+- Ghi nhận tài xế đã đến điểm đón.
+- Ghi nhận tài xế đã đón khách.
+- Ghi nhận chuyến đang di chuyển.
+- Ghi nhận chuyến hoàn thành.
+- Hủy chuyến.
+- Lưu lịch sử chuyến đi.
+### FR09 - Theo dõi vị trí tài xế
+- Nhận vị trí của tài xế.
+- Cập nhật vị trí tài xế.
+- Lưu thông tin vị trí.
+- Hiển thị vị trí tài xế.
+- Tính khoảng cách giữa tài xế và điểm đón.
+- Cập nhật thời gian dự kiến tài xế đến.
+- Theo dõi vị trí trong quá trình thực hiện chuyến.
+### FR10 - Tính cước
+- Xác định loại dịch vụ.
+- Lấy thông tin chuyến đi.
+- Xác định thông tin cần dùng để tính cước.
+- Tính số tiền chuyến đi.
+- Hiển thị số tiền cần thanh toán.
+- Lưu thông tin cước.
+- Liên kết thông tin cước với chuyến đi.
+### FR11 - Thanh toán
+- Hiển thị số tiền cần thanh toán.
+- Chọn phương thức thanh toán.
+- Thanh toán bằng tiền mặt.
+- Thanh toán bằng phương thức điện tử.
+- Tạo giao dịch thanh toán.
+- Gửi giao dịch đến nhà cung cấp thanh toán.
+- Nhận kết quả giao dịch.
+- Cập nhật trạng thái thanh toán.
+### FR12 - Xử lý thanh toán
+- Ghi nhận thanh toán thành công.
+- Ghi nhận thanh toán thất bại.
+- Hiển thị kết quả thanh toán.
+- Gửi thông báo kết quả thanh toán.
+- Lưu lịch sử giao dịch.
+- Cho phép xử lý lại khi thanh toán thất bại.
+- Không lưu trực tiếp thông tin nhạy cảm của thẻ hoặc tài khoản thanh toán.
+### FR13 - Thông báo
+- Xác định sự kiện cần thông báo.
+- Gửi thông báo khi yêu cầu đặt xe được tiếp nhận.
+- Gửi thông báo khi có tài xế nhận chuyến.
+- Gửi thông báo khi tài xế đến điểm đón.
+- Gửi thông báo khi chuyến hoàn thành.
+- Gửi thông báo kết quả thanh toán.
+- Gửi thông báo chuyến mới cho tài xế.
+- Gửi thông báo khi chuyến có thay đổi.
+- Ghi nhận trạng thái gửi thông báo.
+### FR14 - Đánh giá tài xế
+- Cho phép khách hàng đánh giá sau khi hoàn thành chuyến.
+- Nhập mức đánh giá.
+- Lưu thông tin đánh giá.
+- Liên kết đánh giá với chuyến đi.
+- Liên kết đánh giá với tài xế.
+- Xem kết quả đánh giá.
+### FR15 - Quản lý vận hành
+- Xem danh sách khách hàng.
+- Xem danh sách tài xế.
+- Xem danh sách phương tiện.
+- Xem danh sách chuyến đi.
+- Xem các chuyến đang diễn ra.
+- Kiểm tra trạng thái tài xế.
+- Kiểm tra trạng thái chuyến.
+- Tra cứu lịch sử giao dịch.
+- Hỗ trợ xử lý chuyến gặp lỗi.
+### FR16 - Xử lý sự cố
+- Xác định chuyến đi gặp sự cố.
+- Xem thông tin chuyến gặp sự cố.
+- Kiểm tra trạng thái hiện tại.
+- Cập nhật trạng thái xử lý.
+- Hỗ trợ xử lý chuyến.
+- Lưu lịch sử xử lý sự cố.
+### FR17 - Báo cáo
+- Thống kê số lượng chuyến.
+- Thống kê doanh thu.
+- Tính tỷ lệ chuyến hoàn thành.
+- Tính tỷ lệ chuyến hủy.
+- Thống kê hiệu quả hoạt động của tài xế.
+- Lọc dữ liệu báo cáo.
+- Xem báo cáo.
+### FR18 - Phân quyền
+- Xác định vai trò người dùng.
+- Cấp quyền theo vai trò.
+- Kiểm tra quyền trước khi thực hiện chức năng.
+- Giới hạn chức năng theo quyền.
+- Kiểm soát các thao tác quản trị.
+- Ghi nhận các thao tác quan trọng.
+### FR19 - Tích hợp thanh toán
+- Kết nối với nhà cung cấp thanh toán.
+- Gửi yêu cầu thanh toán.
+- Nhận kết quả thanh toán.
+- Xử lý giao dịch thành công.
+- Xử lý giao dịch thất bại.
+- Xử lý lỗi kết nối.
+- Bảo vệ thông tin thanh toán nhạy cảm.
+### FR20 - Tích hợp thông báo
+- Kết nối với nhà cung cấp dịch vụ thông báo.
+- Gửi yêu cầu gửi thông báo.
+- Nhận trạng thái gửi.
+- Xử lý lỗi gửi thông báo.
+- Hỗ trợ thêm kênh thông báo mới.
+### FR21 - Khả năng mở rộng
+- Hỗ trợ thêm loại dịch vụ mới.
+- Hỗ trợ thêm phương thức thanh toán mới.
+- Hỗ trợ thêm nhà cung cấp thanh toán.
+- Hỗ trợ thêm nhà cung cấp thông báo.
+- Cho phép triển khai chức năng mới từng phần.
+- Hạn chế ảnh hưởng đến các chức năng đang hoạt động.
