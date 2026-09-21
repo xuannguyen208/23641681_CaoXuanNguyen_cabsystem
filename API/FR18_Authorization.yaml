@@ -1,0 +1,34 @@
+openapi: 3.0.3
+
+info:
+  title: JAM / CAB - Authorization API
+  version: 1.0.0
+  description: |
+    Đặc tả API cho chức năng phân quyền của hệ thống đặt xe JAM/CAB.
+
+    FR18 - Phân quyền.
+
+    Lưu ý: Trong api.yaml gốc, FR18 chỉ được khai báo ở mức tag và chưa có
+    endpoint riêng cho chức năng phân quyền. Vì vậy file này giữ đúng nội dung
+    được đặc tả trong api.yaml, không tự thêm endpoint mới.
+
+servers:
+  - url: http://localhost:8080/api/v1
+    description: Local Development
+
+tags:
+  - name: Authorization
+    description: FR18 - Phân quyền
+
+security:
+  - bearerAuth: []
+
+paths: {}
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: Nhập token dạng Bearer <token>.
